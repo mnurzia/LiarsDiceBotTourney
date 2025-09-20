@@ -11,7 +11,7 @@ from pathlib import Path
 import socket
 
 
-def MoveHandlerProcess(moveResponse_socket_path, gameState_socket_path):
+def MoveHandlerProcess(CalculateMove, moveResponse_socket_path, gameState_socket_path):
     context = zmq.Context()
 
     # Socket to get game states
